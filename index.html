@@ -541,44 +541,81 @@
               <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
+                  <div class="achievement-item" style="text-align: center; display: flex; align-items: center; justify-content: space-between;">
+                    <!-- Text Section -->
+                    <div class="achievement-text" style="width: 50%; text-align: left; margin: 20px;">
+                      <h3>Time/Cost Savings</h3>
+                      <p>
+                        Automated reporting reduced manual work by 90%, saving 20 hours per week (1,000+ hours annually) 
+                        and $15,000 annually in labor costs. Operational costs were significantly reduced by streamlining 
+                        inefficient processes.
+                      </p>
+                    </div>
+                
+                    <!-- Pie Chart Section -->
+                    <div class="achievement-visual" style="width: 30%; text-align: center;">
+                      <canvas id="costSavingsPieChart" style="max-width: 100%; height: auto;"></canvas>
+                    </div>
                   </div>
-                </div><!-- End testimonial item -->
+                </div>
+                <!-- End Achievement Item -->
 
                 <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
+                  <div class="achievement-item" style="text-align: center; display: flex; align-items: center; justify-content: space-between;">
+                    <!-- Text Section -->
+                    <div class="achievement-text" style="width: 50%; text-align: left; margin: 20px;">
+                      <h3>Increased Efficiency</h3>
+                      <p>
+                        Implemented tools that improved transaction handling efficiency by 10%, saving 5 hours weekly. 
+                        Downtime was reduced by 16%, avoiding $8,000 in quarterly losses.
+                      </p>
+                    </div>
+                
+                    <!-- Line Graph Section -->
+                    <!-- <div class="achievement-visual" style="width: 45%; text-align: center;">
+                      <canvas id="monitoringLineGraph" style="max-width: 100%; height: auto;"></canvas>
+                    </div> -->
                   </div>
-                </div><!-- End testimonial item -->
+                </div>
+                <!-- End Achievement Item -->
 
                 <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
+                  <div class="achievement-item" style="text-align: center; display: flex; align-items: center; justify-content: space-between;">
+                    <!-- Text Section -->
+                    <div class="achievement-text" style="width: 50%; text-align: left; margin: 20px;">
+                      <h3>Improved Accuracy</h3>
+                      <p>
+                        Automation reduced human errors by 95%, saving $5,000 quarterly in error correction costs. 
+                        Standardized reporting ensured 100% data consistency, enhancing decision-making.
+                      </p>
+                    </div>
+                
+                    <!-- Line Graph Section -->
+                    <!-- <div class="achievement-visual" style="width: 45%; text-align: center;">
+                      <canvas id="monitoringLineGraph" style="max-width: 100%; height: auto;"></canvas>
+                    </div> -->
                   </div>
-                </div><!-- End testimonial item -->
+                </div>
+                <!-- End Achievement Item -->
 
                 <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
+                  <div class="achievement-item" style="text-align: center; display: flex; align-items: center; justify-content: space-between;">
+                    <!-- Text Section -->
+                    <div class="achievement-text" style="width: 50%; text-align: left; margin: 20px;">
+                      <h3>Enhanced Collaboration</h3>
+                      <p>
+                        Unified real-time dashboards reduced miscommunication by 80%, accelerating task completion. 
+                        Shared dashboards led to a 25% reduction in meeting durations.
+                      </p>
+                    </div>
+                
+                    <!-- Line Graph Section -->
+                    <!-- <div class="achievement-visual" style="width: 45%; text-align: center;">
+                      <canvas id="monitoringLineGraph" style="max-width: 100%; height: auto;"></canvas>
+                    </div> -->
                   </div>
-                </div><!-- End testimonial item -->
+                </div>
+                <!-- End Achievement Item -->
 
                 <div class="swiper-slide">
                   <div class="achievement-item" style="text-align: center; display: flex; align-items: center; justify-content: space-between;">
@@ -586,8 +623,8 @@
                     <div class="achievement-text" style="width: 50%; text-align: left; margin: 20px;">
                       <h3>Improved Monitoring and Decision-Making</h3>
                       <p>
-                        Real-time monitoring tools improved issue resolution times by 30%, enabling managers to make better data-driven decisions. 
-                        Performance metrics improved by 15% across departments.
+                        Real-time monitoring tools improved issue resolution times by 30%, enabling managers to make better 
+                        data-driven decisions. Performance metrics improved by 15% across departments.
                       </p>
                     </div>
                 
@@ -644,9 +681,10 @@
   <script src="assets/js/main.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Line Graph Script -->
 <script>
-  const ctx = document.getElementById('monitoringLineGraph').getContext('2d');
-  const monitoringLineGraph = new Chart(ctx, {
+  const ctxLine = document.getElementById('monitoringLineGraph').getContext('2d');
+  const monitoringLineGraph = new Chart(ctxLine, {
     type: 'line',
     data: {
       labels: ['Q1', 'Q2', 'Q3', 'Q4'], // Example quarters
@@ -691,6 +729,30 @@
             text: 'Improvement (%)'
           },
           beginAtZero: true,
+        }
+      }
+    }
+  });
+</script>
+
+<!-- Pie Chart Script -->
+<script>
+  const ctxPie = document.getElementById('costSavingsPieChart').getContext('2d');
+  const costSavingsPieChart = new Chart(ctxPie, {
+    type: 'pie',
+    data: {
+      labels: ['Time Savings', 'Labor Savings', 'Error Reduction'],
+      datasets: [{
+        data: [40, 35, 25], // Example percentages for the breakdown
+        backgroundColor: ['#007bff', '#28a745', '#ffc107'], // Colors for each section
+        hoverOffset: 4
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'bottom'
         }
       }
     }
