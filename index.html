@@ -65,10 +65,10 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="active">Home<br></a></li>
-            <li><a href="#about">About the Employer</a></li>
-            <li><a href="#departments">Job Description</a></li>
-            <li><a href="#goals-reflections">Goals and Reflections</a></li>
-            <li><a href="#testimonials">Achievements</a></li>
+            <li><a href="#about-kal" class="nav-section-link" data-section="about">About the Employer</a></li>
+            <li><a href="#departments-kal" class="nav-section-link" data-section="departments">Job Description</a></li>
+            <li><a href="#goals-reflections-kal" class="nav-section-link" data-section="goals-reflections">Goals and Reflections</a></li>
+            <li><a href="#testimonials-kal" class="nav-section-link" data-section="testimonials">Achievements</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -106,28 +106,28 @@
             <div class="row gy-4">
               <!-- Fall 2024: Kal-Polymers -->
               <div class="col-xl-4 d-flex align-items-stretch">
-                <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
+                <div class="icon-box coop-selector coop-active" data-coop="kal" role="button" tabindex="0" data-aos="zoom-out" data-aos-delay="300" aria-pressed="true" aria-label="Show Kal-Polymers work term content">
                   <i class="bi bi-building"></i>
                   <h4>Fall 2024: Kal-Polymers</h4>
                   <p>Automated processes, developed applications, and streamlined operations to improve efficiency and reduce downtime.</p>
                 </div>
               </div><!-- End Icon Box -->
 
-              <!-- Summer 2025: Undecided -->
+              <!-- Winter 2026: Ontario Public Service -->
               <div class="col-xl-4 d-flex align-items-stretch">
-                <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                  <i class="bi bi-search"></i>
-                  <h4>Summer 2025: Searching</h4>
-                  <p>Excited to explore opportunities that align with my passion for software engineering and data-driven solutions.</p>
+                <div class="icon-box coop-selector" data-coop="ops" role="button" tabindex="0" data-aos="zoom-out" data-aos-delay="400" aria-pressed="false" aria-label="Show Ontario Public Service work term content">
+                  <i class="bi bi-bank"></i>
+                  <h4>Winter 2026: Ontario Public Service</h4>
+                  <p>Public-sector technology and services. Click to view this work term below (content TBD).</p>
                 </div>
               </div><!-- End Icon Box -->
 
-              <!-- Winter 2026: Undecided -->
+              <!-- Summer 2026: AMD -->
               <div class="col-xl-4 d-flex align-items-stretch">
-                <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                  <i class="bi bi-calendar3"></i>
-                  <h4>Winter 2026: Undecided</h4>
-                  <p>Looking forward to contributing to impactful projects and enhancing my technical and professional skills.</p>
+                <div class="icon-box coop-selector" data-coop="amd" role="button" tabindex="0" data-aos="zoom-out" data-aos-delay="500" aria-pressed="false" aria-label="Show AMD work term content">
+                  <i class="bi bi-cpu"></i>
+                  <h4>Summer 2026: AMD</h4>
+                  <p>Semiconductor and computing work. Click to view this work term below (content TBD).</p>
                 </div>
               </div><!-- End Icon Box -->
             </div>
@@ -137,9 +137,10 @@
     </div>
   </section><!-- /Hero Section -->
 
+  <div class="coop-panel coop-panel--kal is-active" id="coop-panel-kal" data-coop="kal" aria-hidden="false">
 
    <!-- About Section -->
-  <section id="about" class="about section">
+  <section id="about-kal" class="about section">
 
     <div class="container">
 
@@ -201,7 +202,7 @@
 
 
   <!-- Departments Section -->
-  <section id="departments" class="departments section">
+  <section id="departments-kal" class="departments section">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
@@ -215,19 +216,19 @@
         <div class="col-lg-3">
           <ul class="nav nav-tabs flex-column">
             <li class="nav-item">
-              <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">Process Automation</a>
+              <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1-kal">Process Automation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Web Application Development</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2-kal">Web Application Development</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Meetings and Demonstrations</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3-kal">Meetings and Demonstrations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Requirements Analysis</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4-kal">Requirements Analysis</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Quality Assurance and Debugging</a>
+              <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5-kal">Quality Assurance and Debugging</a>
             </li>
           </ul>
         </div>
@@ -235,7 +236,7 @@
           <div class="tab-content">
 
             <!-- Process Automation -->
-            <div class="tab-pane active show" id="departments-tab-1">
+            <div class="tab-pane active show" id="departments-tab-1-kal">
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
                   <h3>Process Automation</h3>
@@ -253,7 +254,7 @@
             </div>
 
             <!-- Web Application Development -->
-            <div class="tab-pane" id="departments-tab-2">
+            <div class="tab-pane" id="departments-tab-2-kal">
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
                   <h3>Web Application Development</h3>
@@ -271,7 +272,7 @@
             </div>
 
             <!-- Meetings and Demonstrations -->
-            <div class="tab-pane" id="departments-tab-3">
+            <div class="tab-pane" id="departments-tab-3-kal">
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
                   <h3>Meetings and Demonstrations</h3>
@@ -289,7 +290,7 @@
             </div>
 
             <!-- Requirements Analysis -->
-            <div class="tab-pane" id="departments-tab-4">
+            <div class="tab-pane" id="departments-tab-4-kal">
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
                   <h3>Requirements Analysis</h3>
@@ -307,7 +308,7 @@
             </div>
 
             <!-- Quality Assurance and Debugging -->
-            <div class="tab-pane" id="departments-tab-5">
+            <div class="tab-pane" id="departments-tab-5-kal">
               <div class="row">
                 <div class="col-lg-8 details order-2 order-lg-1">
                   <h3>Quality Assurance and Debugging</h3>
@@ -334,7 +335,7 @@
 
 
 <!-- Technologies Used Section -->
-<section id="technologies" class="technologies section light-background">
+<section id="technologies-kal" class="technologies section light-background">
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -375,7 +376,7 @@
 </section><!-- /Technologies Used Section -->
 
 <!-- Goals and Reflections Section -->
-<section id="goals-reflections" class="goals-reflections section">
+<section id="goals-reflections-kal" class="goals-reflections section">
   <div class="container">
     <div class="section-header" data-aos="fade-up">
       <h2>Goals and Reflections</h2>
@@ -506,7 +507,7 @@
 
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <section id="testimonials-kal" class="testimonials section">
 
       <div class="container">
 
@@ -554,7 +555,7 @@
                 
                     <!-- Pie Chart Section -->
                     <div class="achievement-visual" style="width: 30%; text-align: center;">
-                      <canvas id="costSavingsPieChart" style="max-width: 100%; height: auto;"></canvas>
+                      <canvas id="costSavingsPieChart-kal" style="max-width: 100%; height: auto;"></canvas>
                     </div>
                   </div>
                 </div>
@@ -630,7 +631,7 @@
                 
                     <!-- Line Graph Section -->
                     <div class="achievement-visual" style="width: 45%; text-align: center;">
-                      <canvas id="monitoringLineGraph" style="max-width: 100%; height: auto;"></canvas>
+                      <canvas id="monitoringLineGraph-kal" style="max-width: 100%; height: auto;"></canvas>
                     </div>
                   </div>
                 </div>
@@ -648,12 +649,313 @@
 
     </section><!-- /Testimonials Section -->
 
+  </div><!-- /coop-panel kal -->
+
+  <!-- Ontario Public Service (placeholder content) -->
+  <div class="coop-panel coop-panel--ops" id="coop-panel-ops" data-coop="ops" aria-hidden="true">
+
+  <section id="about-ops" class="about section">
+    <div class="container">
+      <div class="row gy-4 gx-5">
+        <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Ontario_wordmark.svg" class="img-fluid p-4" alt="Ontario wordmark">
+        </div>
+        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+          <h3>About the Ontario Public Service</h3>
+          <p>
+            Placeholder: The Ontario Public Service (OPS) is the Government of Ontario’s public service, delivering programs
+            and services to Ontarians. This section will describe your ministry, branch, and how your role fit into the broader mission.
+          </p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-landmark"></i>
+              <div>
+                <h5>Mission &amp; impact</h5>
+                <p>Placeholder text about public impact, stakeholders, and the outcomes your work supported.</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-users"></i>
+              <div>
+                <h5>Team &amp; culture</h5>
+                <p>Placeholder text about collaboration, agile practices, or government-specific workflows you experienced.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="departments-ops" class="departments section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Job description (placeholder)</h2>
+      <p>Summer 2025 — replace this intro with your actual role title and summary.</p>
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item"><a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1-ops">Focus area A</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2-ops">Focus area B</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="departments-tab-1-ops">
+              <h3>Sample responsibility</h3>
+              <p class="fst-italic">Lorem-style placeholder.</p>
+              <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+              </p>
+            </div>
+            <div class="tab-pane" id="departments-tab-2-ops">
+              <h3>Another sample area</h3>
+              <p>
+                Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="technologies-ops" class="technologies section light-background">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-brands fa-microsoft" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.5rem; font-weight: bold;">.NET / Azure (TBD)</p>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-solid fa-database" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.5rem; font-weight: bold;">SQL (TBD)</p>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-brands fa-python" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.5rem; font-weight: bold;">Python (TBD)</p>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-brands fa-github" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.5rem; font-weight: bold;">Git (TBD)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="goals-reflections-ops" class="goals-reflections section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Goals and Reflections</h2>
+        <p>Placeholder — add your learning goals and reflections for the OPS term.</p>
+      </div>
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-5 col-md-6 flip-box mb-4">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h3>Learning goal (sample)</h3>
+              <h4>Communicating in a large organization</h4>
+              <p>Placeholder action plan and measures of success will go here.</p>
+            </div>
+            <div class="flip-box-back">
+              <h3>Reflection (sample)</h3>
+              <p>Placeholder reflection text.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 flip-box mb-4">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h3>Learning goal (sample)</h3>
+              <h4>Technical depth</h4>
+              <p>Another placeholder card — replace with real content later.</p>
+            </div>
+            <div class="flip-box-back">
+              <h3>Reflection (sample)</h3>
+              <p>Placeholder reflection text.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials-ops" class="testimonials section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+          <h3>Achievements</h3>
+          <p>Placeholder: list outcomes, metrics, or projects you will document for your OPS co-op.</p>
+        </div>
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+          <ul class="list-unstyled">
+            <li class="mb-3 p-3 border rounded"><strong>Highlight 1</strong> — Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li class="mb-3 p-3 border rounded"><strong>Highlight 2</strong> — Aliquam tincidunt mauris eu risus.</li>
+            <li class="mb-3 p-3 border rounded"><strong>Highlight 3</strong> — Vestibulum auctor dapibus neque.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /coop-panel ops -->
+
+  <!-- AMD (placeholder content) -->
+  <div class="coop-panel coop-panel--amd" id="coop-panel-amd" data-coop="amd" aria-hidden="true">
+
+  <section id="about-amd" class="about section">
+    <div class="container">
+      <div class="row gy-4 gx-5">
+        <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/AMD_Logo.svg" class="img-fluid p-4" alt="AMD logo">
+        </div>
+        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+          <h3>About AMD</h3>
+          <p>
+            Placeholder: Advanced Micro Devices (AMD) designs high-performance and adaptive computing solutions for consumers
+            and enterprises. Replace this with your site, product group, and how your team contributed to GPUs, CPUs, or software.
+          </p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-microchip"></i>
+              <div>
+                <h5>Products &amp; technology</h5>
+                <p>Placeholder: e.g. Ryzen, Radeon, ROCm, embedded — tailored to your placement.</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <h5>Your contribution</h5>
+                <p>Placeholder: tools you used, systems you touched, and impact you will quantify later.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="departments-amd" class="departments section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Job description (placeholder)</h2>
+      <p>Winter 2026 — replace with your role, stack, and day-to-day responsibilities.</p>
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item"><a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1-amd">Technical work</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2-amd">Collaboration</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="departments-tab-1-amd">
+              <h3>Sample project bucket</h3>
+              <p>
+                Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.
+                Suspendisse in justo eu magna luctus suscipit. Replace with real projects and tools.
+              </p>
+            </div>
+            <div class="tab-pane" id="departments-tab-2-amd">
+              <h3>Cross-functional work</h3>
+              <p>Placeholder for design reviews, sprints, debugging sessions, or hardware/software bring-up.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="technologies-amd" class="technologies section light-background">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-solid fa-code" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.5rem; font-weight: bold;">C / C++ (TBD)</p>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-brands fa-python" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.5rem; font-weight: bold;">Python (TBD)</p>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-solid fa-terminal" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.5rem; font-weight: bold;">Build / CI (TBD)</p>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-brands fa-linux" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.5rem; font-weight: bold;">Linux (TBD)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="goals-reflections-amd" class="goals-reflections section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Goals and Reflections</h2>
+        <p>Placeholder — add your learning goals and reflections for the AMD term.</p>
+      </div>
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-5 col-md-6 flip-box mb-4">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h3>Learning goal (sample)</h3>
+              <h4>Systems &amp; performance mindset</h4>
+              <p>Placeholder goals for low-level optimization, validation, or driver stacks — edit later.</p>
+            </div>
+            <div class="flip-box-back">
+              <h3>Reflection (sample)</h3>
+              <p>Placeholder reflection.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 flip-box mb-4">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h3>Learning goal (sample)</h3>
+              <h4>Working in hardware/software co-design</h4>
+              <p>Placeholder text.</p>
+            </div>
+            <div class="flip-box-back">
+              <h3>Reflection (sample)</h3>
+              <p>Placeholder reflection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials-amd" class="testimonials section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+          <h3>Achievements</h3>
+          <p>Placeholder: metrics, features shipped, bugs fixed, or research outcomes for your AMD term.</p>
+        </div>
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+          <ul class="list-unstyled">
+            <li class="mb-3 p-3 border rounded"><strong>Milestone A</strong> — Sample achievement description to replace.</li>
+            <li class="mb-3 p-3 border rounded"><strong>Milestone B</strong> — Sample achievement description to replace.</li>
+            <li class="mb-3 p-3 border rounded"><strong>Milestone C</strong> — Sample achievement description to replace.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /coop-panel amd -->
+
   </main>
 
   <footer id="footer" class="footer light-background">
     <div class="container text-center mt-4">
-      <p class="mb-2">
-        IT Assistant (Co-op) | Kal-Polymers (Sept 2024 - Dec 2024) <br> Mississauga, ON
+      <p class="mb-2" id="footer-coop-line">
+        IT Assistant (Co-op) | Kal-Polymers (Sept 2024 – Dec 2024) <br> Mississauga, ON
       </p>
       <div class="social-links d-flex justify-content-center mt-3" style="margin-bottom: 10px;">
         <a href="https://github.com/tanveerSadat" class="me-3"><i class="bi bi-github"></i></a>
@@ -683,8 +985,10 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <!-- Line Graph Script -->
 <script>
-  const ctxLine = document.getElementById('monitoringLineGraph').getContext('2d');
-  const monitoringLineGraph = new Chart(ctxLine, {
+  const ctxLineEl = document.getElementById('monitoringLineGraph-kal');
+  if (ctxLineEl) {
+  const ctxLine = ctxLineEl.getContext('2d');
+  new Chart(ctxLine, {
     type: 'line',
     data: {
       labels: ['Q1', 'Q2', 'Q3', 'Q4'], // Example quarters
@@ -733,12 +1037,15 @@
       }
     }
   });
+  }
 </script>
 
 <!-- Pie Chart Script -->
 <script>
-  const ctxPie = document.getElementById('costSavingsPieChart').getContext('2d');
-  const costSavingsPieChart = new Chart(ctxPie, {
+  const ctxPieEl = document.getElementById('costSavingsPieChart-kal');
+  if (ctxPieEl) {
+  const ctxPie = ctxPieEl.getContext('2d');
+  new Chart(ctxPie, {
     type: 'pie',
     data: {
       labels: ['Time Savings', 'Labor Savings', 'Error Reduction'],
@@ -757,6 +1064,7 @@
       }
     }
   });
+  }
 </script>
 
 

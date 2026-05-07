@@ -1075,6 +1075,29 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+.coop-panel:not(.is-active) {
+  display: none;
+}
+
+.hero .content .icon-box.coop-selector {
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.hero .content .icon-box.coop-selector:hover {
+  transform: translateY(-2px);
+}
+
+.hero .content .icon-box.coop-selector:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+.hero .content .icon-box.coop-selector.coop-active {
+  box-shadow: 0 0 0 3px var(--accent-color), 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/

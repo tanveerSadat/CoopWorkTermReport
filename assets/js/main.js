@@ -182,4 +182,122 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Co-op work term panels (hero cards switch main content)
+   */
+  const COOP_KEYS = ['kal', 'ops', 'amd'];
+  const FOOTER_HTML_BY_COOP = {
+    kal: 'IT Assistant (Co-op) | Kal-Polymers (Sept 2024 – Dec 2024) <br> Mississauga, ON',
+    ops: 'Co-op role (TBD) | Ontario Public Service (Summer 2025) <br> Ontario, Canada',
+    amd: 'Co-op role (TBD) | AMD (Winter 2026) <br> Location TBD'
+  };
+
+  function getStoredCoop() {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('coop');
+    if (q && COOP_KEYS.includes(q)) return q;
+
+    if (window.location.hash) {
+      const h = window.location.hash.slice(1);
+      const suffixMatch = h.match(/^(?:about|departments|technologies|goals-reflections|testimonials)-(kal|ops|amd)$/);
+      if (suffixMatch && COOP_KEYS.includes(suffixMatch[1])) return suffixMatch[1];
+    }
+
+    try {
+      const fromStorage = localStorage.getItem('coop-term');
+      if (fromStorage && COOP_KEYS.includes(fromStorage)) return fromStorage;
+    } catch (e) { /* ignore */ }
+    return 'kal';
+  }
+
+  function setStoredCoop(coop) {
+    try {
+      localStorage.setItem('coop-term', coop);
+    } catch (e) { /* ignore */ }
+  }
+
+  function syncUrlCoop(coop) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('coop', coop);
+    window.history.replaceState({}, '', url);
+  }
+
+  function updateNavForCoop(coop) {
+    document.querySelectorAll('.nav-section-link').forEach(link => {
+      const key = link.getAttribute('data-section');
+      if (!key) return;
+      link.href = `#${key}-${coop}`;
+    });
+  }
+
+  function applyCoopTerm(coop, opts) {
+    const options = opts || {};
+    if (!COOP_KEYS.includes(coop)) coop = 'kal';
+
+    COOP_KEYS.forEach(key => {
+      const panel = document.getElementById('coop-panel-' + key);
+      if (!panel) return;
+      const on = key === coop;
+      panel.classList.toggle('is-active', on);
+      panel.setAttribute('aria-hidden', on ? 'false' : 'true');
+    });
+
+    document.querySelectorAll('.coop-selector').forEach(box => {
+      const on = box.getAttribute('data-coop') === coop;
+      box.classList.toggle('coop-active', on);
+      box.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+
+    const footerLine = document.getElementById('footer-coop-line');
+    if (footerLine && FOOTER_HTML_BY_COOP[coop]) {
+      footerLine.innerHTML = FOOTER_HTML_BY_COOP[coop];
+    }
+
+    updateNavForCoop(coop);
+    setStoredCoop(coop);
+    if (!options.skipUrl) {
+      syncUrlCoop(coop);
+    }
+
+    if (typeof AOS !== 'undefined') {
+      AOS.refresh();
+    }
+
+    const kalSwiperEl = document.querySelector('#coop-panel-kal .init-swiper');
+    if (kalSwiperEl && kalSwiperEl.swiper) {
+      kalSwiperEl.swiper.update();
+    }
+
+    if (!options.skipScroll) {
+      const firstSection = document.querySelector('#about-' + coop);
+      if (firstSection) {
+        const scrollMarginTop = parseInt(getComputedStyle(firstSection).scrollMarginTop, 10) || 0;
+        window.scrollTo({
+          top: firstSection.offsetTop - scrollMarginTop,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }
+
+  function initCoopSelectors() {
+    const initial = getStoredCoop();
+    applyCoopTerm(initial, { skipScroll: true, skipUrl: true });
+
+    document.querySelectorAll('.coop-selector').forEach(box => {
+      box.addEventListener('click', function() {
+        const c = this.getAttribute('data-coop');
+        if (c) applyCoopTerm(c);
+      });
+      box.addEventListener('keydown', function(e) {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        e.preventDefault();
+        const c = this.getAttribute('data-coop');
+        if (c) applyCoopTerm(c);
+      });
+    });
+  }
+
+  window.addEventListener('load', initCoopSelectors);
+
 })();
