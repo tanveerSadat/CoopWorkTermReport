@@ -188,8 +188,8 @@
   const COOP_KEYS = ['kal', 'ops', 'amd'];
   const FOOTER_HTML_BY_COOP = {
     kal: 'IT Assistant (Co-op) | Kal-Polymers (Sept 2024 – Dec 2024) <br> Mississauga, ON',
-    ops: 'Co-op role (TBD) | Ontario Public Service (Summer 2025) <br> Ontario, Canada',
-    amd: 'Co-op role (TBD) | AMD (Winter 2026) <br> Location TBD'
+    ops: 'Junior Technical Analyst (Co-op) | Ontario Public Service / GovTechON (Jan 5 – Apr 30, 2026) <br> Toronto, ON',
+    amd: 'Co-op role (TBD) | AMD (Summer 2026) <br> Location TBD'
   };
 
   function getStoredCoop() {
@@ -263,10 +263,11 @@
       AOS.refresh();
     }
 
-    const kalSwiperEl = document.querySelector('#coop-panel-kal .init-swiper');
-    if (kalSwiperEl && kalSwiperEl.swiper) {
-      kalSwiperEl.swiper.update();
-    }
+    document.querySelectorAll('.init-swiper').forEach((el) => {
+      if (el.swiper) {
+        el.swiper.update();
+      }
+    });
 
     if (!options.skipScroll) {
       const firstSection = document.querySelector('#about-' + coop);

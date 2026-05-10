@@ -1098,6 +1098,71 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 88%);
 }
 
+/* OPS: local text wordmark (replaces external Ontario logo that often fails to load) */
+.ops-ontario-wordmark {
+  padding: 0.75rem 0 0.25rem;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.ops-ontario-wordmark__text {
+  display: block;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  letter-spacing: 0.14em;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.ops-ontario-wordmark__sub {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 38%);
+}
+
+/* OPS About: compact photo swiper */
+.ops-about-gallery-swiper {
+  --ops-gallery-h: 220px;
+}
+
+.ops-about-gallery-swiper .ops-gallery-slide-img {
+  display: block;
+  width: 100%;
+  height: var(--ops-gallery-h);
+  object-fit: cover;
+  object-position: center;
+}
+
+.ops-about-gallery-swiper .swiper-slide {
+  height: auto;
+}
+
+.ops-about-gallery-swiper__pagination.swiper-pagination-bullets {
+  position: relative;
+  margin-top: 12px;
+}
+
+.ops-about-gallery-swiper__pagination .swiper-pagination-bullet {
+  opacity: 0.45;
+}
+
+.ops-about-gallery-swiper__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--accent-color);
+}
+
+/* OPS departments: side photos shorter than tall text blocks */
+.departments .ops-tab-aside-img {
+  max-height: 180px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
