@@ -130,7 +130,10 @@
                 <div class="icon-box coop-selector" data-coop="amd" role="button" tabindex="0" data-aos="zoom-out" data-aos-delay="500" aria-pressed="false" aria-label="Show AMD work term content">
                   <i class="bi bi-cpu"></i>
                   <h4>Summer 2026: AMD</h4>
-                  <p>Semiconductor and computing work. Click to view this work term below (content TBD).</p>
+                  <p>
+                    <strong>May – August 2026.</strong> Software engineering on the FreeSync team in AMD's DAL graphics driver group:
+                    maintaining the FreeSync certification app and building new driver features.
+                  </p>
                 </div>
               </div><!-- End Icon Box -->
             </div>
@@ -711,9 +714,9 @@
           </ul>
         </div>
         <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
-          <div class="ops-ontario-wordmark mb-3" role="img" aria-label="Ontario — Government of Ontario (text wordmark)">
-            <span class="ops-ontario-wordmark__text">Ontario</span>
-            <span class="ops-ontario-wordmark__sub">Government of Ontario</span>
+          <div class="employer-wordmark mb-3" role="img" aria-label="Ontario — Government of Ontario (text wordmark)">
+            <span class="employer-wordmark__text">Ontario</span>
+            <span class="employer-wordmark__sub">Government of Ontario</span>
           </div>
           <p class="small text-muted mb-2">Snapshots from onboarding, client work, and the office.</p>
           <div class="swiper init-swiper ops-about-gallery-swiper rounded overflow-hidden shadow-sm">
@@ -1075,35 +1078,78 @@
 
   </div><!-- /coop-panel ops -->
 
-  <!-- AMD (placeholder content) -->
+  <!-- AMD — Summer 2026 -->
   <div class="coop-panel coop-panel--amd" id="coop-panel-amd" data-coop="amd" aria-hidden="true">
 
   <section id="about-amd" class="about section">
     <div class="container">
-      <div class="row gy-4 gx-5">
-        <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/AMD_Logo.svg" class="img-fluid p-4" alt="AMD logo">
-        </div>
-        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-          <h3>About AMD</h3>
+      <div class="row gy-4 gx-5 align-items-start">
+        <div class="col-lg-7 content" data-aos="fade-up" data-aos-delay="100">
+          <h3>About the employer</h3>
           <p>
-            Placeholder: Advanced Micro Devices (AMD) designs high-performance and adaptive computing solutions for consumers
-            and enterprises. Replace this with your site, product group, and how your team contributed to GPUs, CPUs, or software.
+            I worked at <strong>Advanced Micro Devices (AMD)</strong> in Markham as a <strong>Software Engineer Intern</strong> on the
+            <strong>FreeSync team</strong>, part of AMD's <strong>DAL</strong> graphics driver organization. DAL is responsible for
+            bringing new features into the graphics driver, and the FreeSync team owns everything FreeSync-related within it.
+          </p>
+          <p>
+            FreeSync is AMD's adaptive-sync technology: it keeps a display's refresh rate in step with the frames the GPU produces,
+            which reduces screen tearing and stutter. My work sat at the point where that technology meets the driver, so
+            my changes ended up in the software that runs AMD graphics hardware.
           </p>
           <ul>
             <li>
-              <i class="fa-solid fa-microchip"></i>
+              <i class="fa-solid fa-display"></i>
               <div>
-                <h5>Products &amp; technology</h5>
-                <p>Placeholder: e.g. Ryzen, Radeon, ROCm, embedded — tailored to your placement.</p>
+                <h5>Graphics driver development</h5>
+                <p>
+                  The team's output ships in the graphics driver for AMD GPUs. New display and FreeSync features pass through
+                  DAL before they reach users.
+                </p>
               </div>
             </li>
             <li>
-              <i class="fa-solid fa-code"></i>
+              <i class="fa-solid fa-microchip"></i>
               <div>
-                <h5>Your contribution</h5>
-                <p>Placeholder: tools you used, systems you touched, and impact you will quantify later.</p>
+                <h5>Whole-platform validation</h5>
+                <p>
+                  GPUs are the product, but driver issues don't happen in isolation. Reproducing and validating them means building
+                  test systems from a range of AMD hardware, CPUs included.
+                </p>
               </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-earth-americas"></i>
+              <div>
+                <h5>A global team</h5>
+                <p>
+                  The FreeSync team has three people in Markham, and around six or seven when you include our colleagues in Taipei,
+                  so collaboration regularly spans sites and time zones.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
+          <div class="employer-wordmark mb-3" role="img" aria-label="AMD — Advanced Micro Devices (text wordmark)">
+            <span class="employer-wordmark__text">AMD</span>
+            <span class="employer-wordmark__sub">Advanced Micro Devices</span>
+          </div>
+          <ul class="employer-facts">
+            <li>
+              <span class="employer-facts__label">Role</span>
+              <span class="employer-facts__value">Software Engineer Intern</span>
+            </li>
+            <li>
+              <span class="employer-facts__label">Team</span>
+              <span class="employer-facts__value">FreeSync, DAL graphics driver</span>
+            </li>
+            <li>
+              <span class="employer-facts__label">Location</span>
+              <span class="employer-facts__value">Markham, ON (Hybrid)</span>
+            </li>
+            <li>
+              <span class="employer-facts__label">Term</span>
+              <span class="employer-facts__value">May – August 2026</span>
             </li>
           </ul>
         </div>
@@ -1113,29 +1159,83 @@
 
   <section id="departments-amd" class="departments section">
     <div class="container section-title" data-aos="fade-up">
-      <h2>Job description (placeholder)</h2>
-      <p>Winter 2026 — replace with your role, stack, and day-to-day responsibilities.</p>
+      <h2>Software Engineer Intern — roles and responsibilities</h2>
+      <p>
+        I split my time between the <strong>FreeSync</strong> product and the wider <strong>DAL</strong> driver team: maintaining the
+        FreeSync certification app, working on FreeSync in the driver, and picking up new driver features when I had capacity.
+      </p>
     </div>
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-3">
           <ul class="nav nav-tabs flex-column">
-            <li class="nav-item"><a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1-amd">Technical work</a></li>
-            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2-amd">Collaboration</a></li>
+            <li class="nav-item"><a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1-amd">FreeSync certification app</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2-amd">FreeSync driver work</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3-amd">DAL feature development</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4-amd">Test systems &amp; debugging</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5-amd">Team rhythm &amp; code review</a></li>
           </ul>
         </div>
         <div class="col-lg-9 mt-4 mt-lg-0">
           <div class="tab-content">
             <div class="tab-pane active show" id="departments-tab-1-amd">
-              <h3>Sample project bucket</h3>
+              <h3>Maintaining the FreeSync certification app</h3>
+              <p class="fst-italic">Owning a tool the FreeSync program relies on.</p>
               <p>
-                Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.
-                Suspendisse in justo eu magna luctus suscipit. Replace with real projects and tools.
+                My main ongoing responsibility was the <strong>FreeSync certification app</strong>. I kept it working: fixing issues as
+                they came up, updating it as FreeSync and the driver changed, and making sure it kept up with new features.
+              </p>
+              <p>
+                Owning an app end to end taught me to treat maintenance as real engineering work. Every change had to be understood,
+                tested, and reviewed, because other people depend on the tool behaving predictably.
               </p>
             </div>
             <div class="tab-pane" id="departments-tab-2-amd">
-              <h3>Cross-functional work</h3>
-              <p>Placeholder for design reviews, sprints, debugging sessions, or hardware/software bring-up.</p>
+              <h3>FreeSync in the graphics driver</h3>
+              <p class="fst-italic">Anything FreeSync-related in the driver comes to our team.</p>
+              <p>
+                I worked in the driver's <strong>C++</strong> codebase on FreeSync functionality, including
+                <strong>new display features</strong> that haven't been announced yet, so the details stay off this page.
+              </p>
+              <p>
+                Driver code runs close to the hardware and ships to a huge number of systems, so correctness matters more than speed.
+                Changes had to be understood thoroughly, tested on real hardware, and reviewed before they went in.
+              </p>
+            </div>
+            <div class="tab-pane" id="departments-tab-3-amd">
+              <h3>Feature work for the broader DAL team</h3>
+              <p class="fst-italic">Contributing beyond FreeSync when I had capacity.</p>
+              <p>
+                Outside FreeSync, I took on <strong>new features for the wider DAL team</strong> whenever my schedule allowed. That work
+                took me into parts of the graphics driver outside my own product area and gave me a broader view of how the
+                driver fits together.
+              </p>
+            </div>
+            <div class="tab-pane" id="departments-tab-4-amd">
+              <h3>Building test systems to validate and debug</h3>
+              <p class="fst-italic">Reproducing issues on real hardware before fixing them.</p>
+              <p>
+                Although the team's product is GPUs, reproducing and validating driver issues often meant
+                <strong>assembling test systems</strong> from different AMD hardware, CPUs included. Getting the right configuration
+                in front of me was frequently the first step toward finding a root cause.
+              </p>
+              <p>
+                That hands-on side of the job connected the code I wrote to how it actually behaves on a machine, and made
+                debugging much more concrete.
+              </p>
+            </div>
+            <div class="tab-pane" id="departments-tab-5-amd">
+              <h3>Two teams, one schedule</h3>
+              <p class="fst-italic">Staying aligned with both the FreeSync team and the broader DAL team.</p>
+              <p>
+                I attended <strong>daily stand-ups</strong> for both the FreeSync team and the broader DAL team, along with a
+                <strong>weekly sprint meeting</strong> for each. Keeping both sets of priorities straight was part of the job.
+              </p>
+              <p>
+                All of my code went through <strong>review by a senior engineer</strong> on the team before merging. That feedback
+                loop was one of the fastest ways I learned the codebase's conventions and expectations. Work was tracked in
+                <strong>Jira</strong>.
+              </p>
             </div>
           </div>
         </div>
@@ -1144,23 +1244,31 @@
   </section>
 
   <section id="technologies-amd" class="technologies section light-background">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Technologies</h2>
+      <p>Driver development is mostly C++, with Python for smaller scripts.</p>
+    </div>
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row gy-4">
-        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
           <i class="fa-solid fa-code" style="font-size: 3rem; margin-bottom: 10px;"></i>
-          <p style="font-size: 1.5rem; font-weight: bold;">C / C++ (TBD)</p>
+          <p style="font-size: 1.35rem; font-weight: bold;">C++</p>
         </div>
-        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
           <i class="fa-brands fa-python" style="font-size: 3rem; margin-bottom: 10px;"></i>
-          <p style="font-size: 1.5rem; font-weight: bold;">Python (TBD)</p>
+          <p style="font-size: 1.35rem; font-weight: bold;">Python</p>
         </div>
-        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-          <i class="fa-solid fa-terminal" style="font-size: 3rem; margin-bottom: 10px;"></i>
-          <p style="font-size: 1.5rem; font-weight: bold;">Build / CI (TBD)</p>
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-brands fa-jira" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.35rem; font-weight: bold;">Jira</p>
         </div>
-        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-          <i class="fa-brands fa-linux" style="font-size: 3rem; margin-bottom: 10px;"></i>
-          <p style="font-size: 1.5rem; font-weight: bold;">Linux (TBD)</p>
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-solid fa-display" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.35rem; font-weight: bold;">Graphics driver</p>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+          <i class="fa-solid fa-microchip" style="font-size: 3rem; margin-bottom: 10px;"></i>
+          <p style="font-size: 1.35rem; font-weight: bold;">Hardware test systems</p>
         </div>
       </div>
     </div>
@@ -1170,32 +1278,103 @@
     <div class="container">
       <div class="section-header" data-aos="fade-up">
         <h2>Goals and Reflections</h2>
-        <p>Placeholder — add your learning goals and reflections for the AMD term.</p>
+        <p>Learning objectives for driver development: problem solving, technological literacy, and time management.</p>
       </div>
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-lg-5 col-md-6 flip-box mb-4">
+      <div class="row g-4 justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-xl-4 col-md-6 flip-box">
           <div class="flip-box-inner">
             <div class="flip-box-front">
-              <h3>Learning goal (sample)</h3>
-              <h4>Systems &amp; performance mindset</h4>
-              <p>Placeholder goals for low-level optimization, validation, or driver stacks — edit later.</p>
+              <h3>Learning goal 1</h3>
+              <h4>Critical &amp; creative thinking — problem solving</h4>
+              <p>
+                Strengthen my ability to diagnose and resolve complex software issues on my own by working debugging tickets end to
+                end, from root-cause investigation to a verified fix.
+              </p>
+              <h5>Action plan</h5>
+              <ul>
+                <li>Reproduce each issue and trace it to its source using logs, version history, and existing tests before writing code.</li>
+                <li>Ask senior engineers for help after a reasonable effort instead of guessing.</li>
+                <li>Document my investigation steps so my reasoning is easy to follow in code review.</li>
+              </ul>
+              <h5>Measures of success</h5>
+              <ul>
+                <li>Close multiple tickets where I found the root cause myself.</li>
+                <li>Have my fixes pass code review with minimal rework.</li>
+              </ul>
             </div>
             <div class="flip-box-back">
-              <h3>Reflection (sample)</h3>
-              <p>Placeholder reflection.</p>
+              <h3>Reflection</h3>
+              <p>
+                Driver bugs rarely point straight at their cause. Reproducing an issue first, often by building the right test
+                system, kept me from fixing symptoms instead of problems. Working back through logs and history before touching
+                code made my fixes smaller and easier to defend in review. I also learned where my limit for being stuck should
+                sit: asking a senior engineer after a focused attempt, with my notes in hand, got me moving faster and usually
+                taught me something about the codebase I wouldn't have found alone.
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-6 flip-box mb-4">
+        <div class="col-xl-4 col-md-6 flip-box">
           <div class="flip-box-inner">
             <div class="flip-box-front">
-              <h3>Learning goal (sample)</h3>
-              <h4>Working in hardware/software co-design</h4>
-              <p>Placeholder text.</p>
+              <h3>Learning goal 2</h3>
+              <h4>Literacy — technological literacy</h4>
+              <p>
+                Build proficiency with my team's internal tools, build systems, and codebase so I can contribute with increasing
+                independence.
+              </p>
+              <h5>Action plan</h5>
+              <ul>
+                <li>Read existing code and documentation before asking questions they already answer.</li>
+                <li>Set up and use the team's development and debugging environment on my own.</li>
+                <li>Keep notes on recurring commands, workflows, and tools as a personal reference.</li>
+              </ul>
+              <h5>Measures of success</h5>
+              <ul>
+                <li>Set up my environment, build the project, and debug a task without step-by-step help.</li>
+                <li>See my ramp-up time on new kinds of tasks shorten over the term.</li>
+              </ul>
             </div>
             <div class="flip-box-back">
-              <h3>Reflection (sample)</h3>
-              <p>Placeholder reflection.</p>
+              <h3>Reflection</h3>
+              <p>
+                The driver codebase is large, and my first weeks were mostly spent reading. Keeping a personal notes file of build
+                commands, debugging steps, and where things live in the code paid off quickly, and by the end of the term I could
+                set up a machine, build, and debug a new task on my own. The bigger change was knowing where to look, which made
+                unfamiliar tickets far less intimidating.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <h3>Learning goal 3</h3>
+              <h4>Professional &amp; ethical behaviour — organization &amp; time management</h4>
+              <p>
+                Strengthen my prioritization and time management while juggling concurrent tasks and shifting priorities in a
+                fast-paced team.
+              </p>
+              <h5>Action plan</h5>
+              <ul>
+                <li>Keep a running list of active tasks with priority and status.</li>
+                <li>Check in with my manager and team regularly to confirm priorities haven't shifted.</li>
+                <li>Break larger tasks into milestones so I can flag delays early.</li>
+              </ul>
+              <h5>Measures of success</h5>
+              <ul>
+                <li>Meet agreed deadlines, or raise risks before a deadline arrives.</li>
+                <li>Give a clear status update on all my active work at any time.</li>
+              </ul>
+            </div>
+            <div class="flip-box-back">
+              <h3>Reflection</h3>
+              <p>
+                Being on two teams meant two sets of stand-ups and sprint priorities, plus certification app work that could come up
+                at any time. A running task list kept me honest, and splitting features into milestones let me flag slips early
+                instead of at the deadline. Confirming priorities with my manager when they shifted saved wasted effort, and giving
+                a clear status on everything in stand-up became a habit rather than a scramble.
+              </p>
             </div>
           </div>
         </div>
@@ -1205,17 +1384,10 @@
 
   <section id="testimonials-amd" class="testimonials section">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 info text-center" data-aos="fade-up" data-aos-delay="100">
           <h3>Achievements</h3>
-          <p>Placeholder: metrics, features shipped, bugs fixed, or research outcomes for your AMD term.</p>
-        </div>
-        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-          <ul class="list-unstyled">
-            <li class="mb-3 p-3 border rounded"><strong>Milestone A</strong> — Sample achievement description to replace.</li>
-            <li class="mb-3 p-3 border rounded"><strong>Milestone B</strong> — Sample achievement description to replace.</li>
-            <li class="mb-3 p-3 border rounded"><strong>Milestone C</strong> — Sample achievement description to replace.</li>
-          </ul>
+          <p>Highlights and charts from this term are coming soon.</p>
         </div>
       </div>
     </div>

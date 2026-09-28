@@ -189,7 +189,7 @@
   const FOOTER_HTML_BY_COOP = {
     kal: 'IT Assistant (Co-op) | Kal-Polymers (Sept 2024 – Dec 2024) <br> Mississauga, ON',
     ops: 'Junior Technical Analyst (Co-op) | Ontario Public Service / GovTechON (Jan 5 – Apr 30, 2026) <br> Toronto, ON',
-    amd: 'Co-op role (TBD) | AMD (Summer 2026) <br> Location TBD'
+    amd: 'Software Engineer Intern | AMD, FreeSync Team (May – Aug 2026) <br> Markham, ON (Hybrid)'
   };
 
   function getStoredCoop() {

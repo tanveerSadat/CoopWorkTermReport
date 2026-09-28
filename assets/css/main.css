@@ -1098,13 +1098,13 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 88%);
 }
 
-/* OPS: local text wordmark (replaces external Ontario logo that often fails to load) */
-.ops-ontario-wordmark {
+/* Employer text wordmarks */
+.employer-wordmark {
   padding: 0.75rem 0 0.25rem;
   border-bottom: 3px solid var(--accent-color);
 }
 
-.ops-ontario-wordmark__text {
+.employer-wordmark__text {
   display: block;
   font-family: var(--heading-font);
   font-weight: 700;
@@ -1115,13 +1115,44 @@ section,
   line-height: 1.15;
 }
 
-.ops-ontario-wordmark__sub {
+.employer-wordmark__sub {
   display: block;
   margin-top: 0.35rem;
   font-size: 0.82rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--default-color), transparent 38%);
+}
+
+.employer-facts {
+  list-style: none;
+  padding: 1.25rem 1.5rem;
+  margin: 0;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+}
+
+.employer-facts li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+.employer-facts li:last-child {
+  border-bottom: 0;
+}
+
+.employer-facts .employer-facts__label {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.employer-facts .employer-facts__value {
+  font-weight: 600;
+  color: var(--heading-color);
 }
 
 /* OPS About: compact photo swiper */
